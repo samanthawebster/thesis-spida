@@ -26,3 +26,6 @@ savename = input('Please input file name for saving? ','s');
 
 imwrite(ima1,[savename '.tif'],'TIFF')
 imwrite(imaWithNoise1 ,[savename '-withnoise.tif'],'TIFF')
+
+% Write both noiseless image and image with noise to the same .tif file
+% imwrite([ima1,imaWithNoise1], [savename '.tif'],'TIFF')
