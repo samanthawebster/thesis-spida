@@ -5,6 +5,8 @@ The original code for addEMCCDNoise, addLaserProfile, and getCtrlPxl was written
 
 The first modification was calling addEMCCDNoise rather than addPMTNoise in RunImageSim. This creates and saves a .tif image representing the noise of an EMCCD detector. This file can be opened with ImageJ. The noise is simulated using the model described in [1].
 
+addEMCCDNoise was orginally developed to be used on a blinking model.
+
 ## References
 
 [1]  Hirsch et al. (2013) A stochastic model for electron multiplication charge coupled devices - from theory to practice, PloS One 8(1):e53671
