@@ -100,19 +100,16 @@ end
 
 % image series of signal
 J_sig = addLaserProfile(J,laser_varargin{:});
+
 % image series of autofluorescence
 J_autofluor = addLaserProfile(autofluor_percent*ones(size(J)),laser_varargin{:});
+
 % image series of raw spatial fluorescence probability per molecule +
 % autofluorescence
-%J_raw = J_sig + J_autofluor;
-
-% Here, to begin, for J_raw, we use ima from create_and_convolve.m. This is a simulated noiseless image and does not include a laser profile. (It might include some sort of profile, is that what the convolve part is?) I doubt it.
+J_raw = J_sig + J_autofluor;
 
 % compute the average number of input electrons detected by emccd per pixel
-% lambda = (avg_photons*q_yield*J_raw + dark_current)*exposure_time + ci_charge;
-
-%% Changed J_raw to ima - preliminary change
-lambda = (avg_photons*q_yield*ima + dark_current)*exposure_time + ci_charge;
+lambda = (avg_photons*q_yield*J_raw + dark_current)*exposure_time + ci_charge;
 
 % degOfFreedom = 4;
 % 
