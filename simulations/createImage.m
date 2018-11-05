@@ -1,4 +1,4 @@
-function imageMatrix=createImage(sizeImage, numParticles)
+function imageMatrix = createImage(sizeImage, numParticles)
 
 % creates a matrix with numParticles number of particles 
 
