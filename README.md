@@ -3,7 +3,7 @@ The purpose of this project is to develop pre-existing code for SpIDA analysis o
 
 The original code for addEMCCDNoise, addLaserProfile, and getCtrlPxl was written by Simon Sehayek. The original SpIDA code was written by Antoine Godin and collaborators.
 
-The first modification was calling addEMCCDNoise rather than addPMTNoise in RunImageSim. This creates and saves a .tif image representing the noise of an EMCCD detector. The noise is simulated using the model described in [1].
+The first modification was calling addEMCCDNoise rather than addPMTNoise in RunImageSim. This creates and saves a .tif image representing the noise of an EMCCD detector. This file can be opened with ImageJ. The noise is simulated using the model described in [1].
 
 References
 
