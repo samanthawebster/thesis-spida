@@ -47,7 +47,8 @@
 % INPUT VARIABLES
 %
 % laser_varargin: varargin to pass to addLaserProfile
-% function noisyImageSeries = addEMCCDNoise(J,laser_varargin,varargin)
+
+function noisyImageSeries = addEMCCDNoise(J,laser_varargin,varargin)
 
 % gain
 gain = 200;
