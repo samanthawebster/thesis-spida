@@ -1,6 +1,6 @@
 % Simulation options
 
-% Name/value pairs for addLaserProfile.m varargin (called in addEMCCDNoise.m
+% Name/value pairs for addLaserProfile.m varargin (called in addEMCCDNoise.m)
 
 % 'laserWidth' | value in [0,inf]
 % 'laserShift' | real number
