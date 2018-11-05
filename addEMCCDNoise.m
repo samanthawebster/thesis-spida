@@ -47,11 +47,7 @@
 % INPUT VARIABLES
 %
 % laser_varargin: varargin to pass to addLaserProfile
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % function noisyImageSeries = addEMCCDNoise(J,laser_varargin,varargin)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% returns J in blinkSim.m
-% We make addEMCCDNoise into a function that takes ima instead of J
-function noisyImageSeries = addEMCCDNoise(ima)
 
 % gain
 gain = 200;
