@@ -1,4 +1,4 @@
-% Generates a noiseless image, ima, and an image with noise, imawithNoise
+% Generates a noiseless image - ima, and an image with noise - imawithNoise
 
 clearvars % -except NoiseFirst
 close all
