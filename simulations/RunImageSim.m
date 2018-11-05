@@ -18,7 +18,7 @@ ima = create_and_convolve(totalsize,den,agg,radius,extra);
 mean(ima(:))
 
 % addEMCCDNoise instead of addPMTNoise
-imawithNoise = addEMCCDNoise(ima, laser_varargin, noise_varargin);
+imaWithNoise = addEMCCDNoise(ima, laser_varargin, noise_varargin);
 
 % imshow([ima,imaWithNoise],[]);
 
