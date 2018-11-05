@@ -3,7 +3,7 @@
 clearvars % -except NoiseFirst
 close all
 
-% run('inputVars.m')
+run('inputVars.m')
 
 totalsize = 500
 
@@ -18,7 +18,7 @@ ima = create_and_convolve(totalsize,den,agg,radius,extra);
 mean(ima(:))
 
 % addEMCCDNoise instead of addPMTNoise
-imawithNoise = addEMCCDNoise(ima, {'laserWidth', 20, 'laserShift', [0,0]}, []);
+imawithNoise = addEMCCDNoise(ima, laser_varargin, noise_varargin);
 
 % imshow([ima,imaWithNoise],[]);
 
