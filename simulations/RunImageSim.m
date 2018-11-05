@@ -2,6 +2,9 @@
 
 clearvars % -except NoiseFirst
 close all
+
+% run('inputVars.m')
+
 totalsize = 500
 
 QuantalBrightness = 10;
