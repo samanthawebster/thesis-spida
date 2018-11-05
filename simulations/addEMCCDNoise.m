@@ -71,28 +71,29 @@ exposure_time = 0.05;
 % avg_photons
 autofluor_percent = 0.05;
 % if(~exist('stdIntensity','var')) % this is used if we don't assume (***)
-%     readOutNoise = 54;%sqrt(2*gain^2*avgPhotons); % default standard error
+%     readOutNoise = 54; % sqrt(2*gain^2*avgPhotons); % default standard error
 % end
+
 for ii = 1:2:length(varargin)
     if strcmpi(varargin{ii},'gain')
         gain = varargin{ii+1};
     elseif strcmpi(varargin{ii},'avgPhotons')
         avg_photons = varargin{ii+1};
-    elseif any(strcmpi(varargin{ii},{'readNoise','readOutNoise'}))
+    elseif strcmpi(varargin{ii},{'readNoise'})
         read_noise = varargin{ii+1};
     elseif strcmpi(varargin{ii},'adf')
         adf = varargin{ii+1};
-    elseif any(strcmpi(varargin{ii},{'intTime','exposureTime'}))
+    elseif strcmpi(varargin{ii},{'exposureTime'})
         exposure_time = varargin{ii+1};
-    elseif any(strcmpi(varargin{ii},{'qYield','quantumYield'}))
+    elseif strcmpi(varargin{ii},{'qYield'})
         q_yield = varargin{ii+1};
-    elseif any(strcmpi(varargin{ii},{'CIC','clockInducedCharge'}))
+    elseif strcmpi(varargin{ii},{'CIC'})
         ci_charge = varargin{ii+1};
     elseif strcmpi(varargin{ii},'darkCurrent')
         dark_current = varargin{ii+1};
         %     elseif any(strcmpi(varargin{ii},{'laserVarargin','laserVar'}))
         %         laser_varargin = varargin{ii+1};
-    elseif any(strcmpi(varargin{ii},{'autofluorPer','autofluorPercent'}))
+    elseif strcmpi(varargin{ii},{'autofluorPer'})
         autofluor_percent = varargin{ii+1};
     end
 end
