@@ -5,7 +5,7 @@
 % 'laserWidth' | value in [0,inf]
 % 'laserShift' | real number
 
-laser_varargin = {'boundCond', 'hard', 'kerType', 'integrate'};
+laser_varargin = {'laserWidth', 100, 'laserShift', [0,0]};
 
 % varargin name options for EMCCD noise (see addEMCCDNoise.m for more
 % details and defaults)
